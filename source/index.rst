@@ -21,9 +21,6 @@ Re-exported from selenium package
 =================================
 
 .. autosummary::
-   selenium_async.core.run_sync
-
-.. autosummary::
    selenium_async.EC
    selenium_async.By
    selenium_async.Firefox
