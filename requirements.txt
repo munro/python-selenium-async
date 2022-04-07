@@ -1,0 +1,9 @@
+selenium
+
+pytest
+pytest-asyncio
+
+myst-parser
+sphinx-markdown-builder
+sphinx-rtd-theme
+sphinxcontrib-napoleon

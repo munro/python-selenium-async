@@ -1,0 +1,41 @@
+[tool.poetry]
+authors = ["Ryan Munro <500774+munro@users.noreply.github.com>"]
+description = "Wrapper for Selenium to make it easy, with asyncio support!"
+documentation = "https://selenium-async.readthedocs.io/en/latest/"
+homepage = "https://github.com/munro/python-selenium-async"
+license = "MIT"
+name = "selenium-async"
+readme = "README.md"
+repository = "https://github.com/munro/python-selenium-async"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+selenium = "^4.1.3"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^4.5.0"
+autoflake = "^1.4"
+black = "^22.3.0"
+ipython = "^8.2.0"
+isort = "^5.10.1"
+myst-parser = "^0.17.0"
+pylint = "^2.13.5"
+pytest = "^7.1.1"
+pytest-asyncio = "^0.18.3"
+sphinx-markdown-builder = "^0.5.5"
+sphinx-rtd-theme = "^1.0.0"
+sphinxcontrib-napoleon = "^0.7"
+
+[tool.poetry.scripts]
+doc = 'selenium_async._scripts:doc'
+format = 'selenium_async._scripts:format'
+test = 'selenium_async._scripts:test'
+test-integration = 'selenium_async._scripts:test_integration'
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]

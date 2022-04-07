@@ -1,0 +1,7 @@
+__pycache__/
+.DS_Store
+.venv/
+*.pyc
+build/
+dist/
+geckodriver.log
